@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        Demo
+    </title>
+    <base href="./" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/xio.css" />
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			background-color: #efdcdd;
+		}
+	</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="./demo.html">Main</a></li>
+                    <li><a href="./test.html">Test</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <div class="view">
+                Hello Demo Test
+            </div>
+        </main>
+        <footer class="footer-block overflow-hidden">
+            <nav>
+                <ul>
+                    <li><a href="./demo.html">Home</a></li>
+                    <li><a href="./test.html">Test</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+            <div class="copy">
+                <span>Copyright Xio &copy 2018</span>
+            </div>
+        </footer>
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="./js/xio.js"></script>
+    <script type="text/javascript">
+        xs.init({
+            contentElement: document.querySelector('.wrapper'),
+            menuElements: [
+                document.querySelector('nav > .main-nav')
+            ],
+            insertCloneButton: document.querySelector('header'),
+            menuFixed: {
+                isFixed: true,
+                topOffset: 56
+            }
+        }, function(self) {
+            console.log('Xio Init');
+        });
+    </script>
+</body>
+
+</html>
