@@ -243,7 +243,7 @@
                     });
                 }
 
-                callback(self);
+                callback && callback(self);
             }
         }
 })(window);
